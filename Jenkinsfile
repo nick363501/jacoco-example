@@ -7,7 +7,7 @@ pipeline {
         stage ('Build') {
             steps {
                 sh "${MVN_HOME}/bin/mvn clean package"
-            }
+                jacoco()            }
         }
         stage ('Publish') {
             steps {
