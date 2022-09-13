@@ -11,7 +11,7 @@ pipeline {
         }
         stage ('Publish') {
             steps {
-                archiveArtifacts artifacts: 'target/*.war'
+                archiveArtifacts artifacts: 'target/*.jarß'
             }
         }
     }
